@@ -4,9 +4,9 @@ import Button from '../button/button.component';
 const NumberOfQuestions = () => {
   return (
     <div>
-      <h2>Step Two:</h2>
+      <h2 className='font-semibold'>Step Two:</h2>
       <h3>How many questions should I include?</h3>
-      <div>
+      <div className='flex justify-start w-full'>
         <Button number={3} />
         <Button number={5} />
         <Button number={10} />
