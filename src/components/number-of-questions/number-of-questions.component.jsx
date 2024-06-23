@@ -5,8 +5,8 @@ const NumberOfQuestions = () => {
   return (
     <div>
       <h2 className='font-semibold'>Step Two:</h2>
-      <h3>How many questions should I include?</h3>
-      <div className='flex justify-start w-full'>
+      <h3 className='mb-5'>How many questions should I include?</h3>
+      <div className='flex justify-between'>
         <Button number={3} />
         <Button number={5} />
         <Button number={10} />
