@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Button from '../button/button.component';
+import TriviaContext from '../../contexts/user.context';
+
+
 
 
 const NumberOfQuestions = () => {
 
-   const [buttonValue, setButtonValue] = useState(null);
+   const {numQuestions, setNumQuestions} = useContext(TriviaContext);
    
    const handleClick = (value) => {
-    setButtonValue(value)
+    setNumQuestions(value)
     
 
    }
@@ -20,9 +23,6 @@ const NumberOfQuestions = () => {
         <Button value={3} onClick={handleClick} />
         <Button value={5} onClick={handleClick} />
         <Button value={10} onClick={handleClick} />
-      </div>
-      <div className='mt-10' >
-      <Button value='Start Trivia Quiz' fullWidth green whiteText />
       </div>
     </div>
   );
